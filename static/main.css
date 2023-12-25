@@ -1,0 +1,55 @@
+/*Класс стиля `header` */
+.header {
+    color: rgb(0, 0, 0);
+    background-color: rgba(160, 168, 182, 0.67);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texts {
+    color: #050950;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.input-form {
+    border-radius: 5px;
+    border: #bdbdbd solid 1px;
+    height: 20px;
+    padding-left: 8px;
+}
+
+.input-block {
+    padding-left: 27px;
+    padding-bottom: 12px;
+    border-color: rgba(0, 0, 0, 0.53);
+    border-style: solid;
+    width: 230px;
+}
+
+.text {
+    color: rgb(0, 3, 38);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.form-button {
+    background-color: #0264f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    box-shadow: 0 0 5px 3px rgba(138, 138, 138, 0.4);
+}

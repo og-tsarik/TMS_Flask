@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание поста</title>
+    <link rel="stylesheet" href="/static-files/main.css">
+</head>
+<body>
+  <h1 class="header">Создать пост</h1>
+
+ <form action="/create_post" method="post">
+        <div class="input-block">
+            <span  class="text">title</span>
+            <div>
+                <input name="title" type="text">
+            </div>
+        </div>
+
+        <div class="input-block">
+            <span  class="text">content</span>
+            <div>
+                <input name="content" type="text">
+            </div>
+        </div>
+
+        <div class="input-block">
+            <input type="submit" value="Добавить запись">
+        </div>
+
+    </form>
+
+
+</body>
+</html>

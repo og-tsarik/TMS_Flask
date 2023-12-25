@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+
+    <!-- Добавляем ссылку на файл стилей -->
+    <link rel="stylesheet" href="/static-files/main.css">
+</head>
+<body>
+    <h1 class="header texts">
+        Добро пожаловать на страницу с записями!
+    </h1>
+
+    <div style="padding-top: 20px;color: #e2e247;">
+       <a href="/create_post" class="texts">Добавить пост</a>
+    </div>
+
+<div class="content">
+
+        {% for note in notes %}
+            <div>
+                <h3>
+                    <a href="/{{note.uuid}}">{{ note.title }}</a></h3>
+                <div>
+                    <div class="texts">Title: {{ note.title }} </div>
+                    <div class="texts">Content: {{ note.content }} </div>
+                    <div class="texts">Create_at: {{ note.create_at }} </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+
+</body>
+</html>
